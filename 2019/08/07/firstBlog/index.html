@@ -266,7 +266,7 @@ window.oldVersion = [
     },
     
     "datePublished": "2019-08-07T10:01:46.000Z",
-    "dateModified": "2019-08-08T10:17:41.546Z",
+    "dateModified": "2019-08-08T10:19:29.827Z",
     "author": {
         "@type": "Person",
         "name": "hxf9812",
@@ -512,7 +512,7 @@ window.oldVersion = [
 <p>简单的把整个搭建过程分享一下<br>基本步骤<br>1.注册github账号<br>2.安装git for win<br>3.配置githubSSH<br>4.安装node<br>5.安装配置hexo<br>6.部署hexo<br>7.简单认识markdown<br>8.添加suka主题</p>
 <p> 因为很多东西之前都没有接触过，所以自然会有对新内容抵触恐惧的心理，其实勇敢迈出第一步，一切都会变的简单。</p>
 <hr>
-<p> 1.注册github账号没什么好说的，主要是仓库的创建，点击create new repository,repository name设置为用户名+.gihub.io,例如我的是 hxf9812.github.io，然后点击创建，完成,进入仓库，<br> 然后创建index页面，就可以在网上打开你的页面了，例如我的：<em>hxf9812.github.io</em><br> 2.进入<a href="https://gitforwindows.org/" target="_blank" rel="noopener">https://gitforwindows.org/</a>官网下载，安装，无脑下一步<br> 3.在git安装目录下打开git-bash.exe，输入<br> ssh-keygen -t rsa -C “你的邮箱” 然后密匙生成在默认位置 c:\Users\Administrator(其实就是你的电脑用户名).ssh\id_rsa,点开查看ssh，复制粘贴到 github主页—点击头像—setting—<br> SSH and GPG keys下，名字可以随便起。<br> 4.官网下载nodejs,<a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">https://nodejs.org/zh-cn/</a>,无脑下一步安装<br> 5.其实打开hexo官网<a href="https://hexo.io/zh-cn/index.html" target="_blank" rel="noopener">https://hexo.io/zh-cn/index.html</a>，已经有说明了，但是这里还是说一下，<br>     1.在电脑创建文件夹，用来存放hexo代码，在cmd下，进入刚创建出来的文件夹下，hexo命令都是在该文件夹下才能生效，这是很重要的一点<br>     2.npm install hexo-cli -g 安装hexo<br>     3.hexo init blog      初始化，blog是你要创建的博客名，例如我的是 hxf9812<br>     4.cd blog  进入创建出来的文件夹<br>     5.npm install<br>     6.hexo s  打开服务，接下来就可以在本地（默认localhost:4000）下查看hexo页面了<br>6.进入你创建的blog文件下，对_config.yml做一些修改，</p>
+<p> 1.注册github账号没什么好说的，主要是仓库的创建，点击create new repository,repository name设置为用户名+.gihub.io,例如我的是 hxf9812.github.io，然后点击创建，完成,进入仓库，<br> 然后创建index页面，就可以在网上打开你的页面了，例如我的：<em>hxf9812.github.io</em><br> 2.进入<a href="https://gitforwindows.org/" target="_blank" rel="noopener">https://gitforwindows.org/</a>官网下载，安装，无脑下一步<br> 3.在git安装目录下打开git-bash.exe，输入<br> ssh-keygen -t rsa -C “你的邮箱” 然后密匙生成在默认位置 c:\Users\Administrator(其实就是你的电脑用户名).ssh\id_rsa,点开查看ssh，复制粘贴到 github主页—点击头像—setting—<br> SSH and GPG keys下，名字可以随便起。<br> 4.官网下载nodejs,<a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">https://nodejs.org/zh-cn/</a>,无脑下一步安装<br> 5.其实打开hexo官网<a href="https://hexo.io/zh-cn/index.html" target="_blank" rel="noopener">https://hexo.io/zh-cn/index.html</a>，已经有说明了，但是这里还是说一下，<br>     *在电脑创建文件夹，用来存放hexo代码，在cmd下，进入刚创建出来的文件夹下，hexo命令都是在该文件夹下才能生效，这是很重要的一点<br>     *npm install hexo-cli -g 安装hexo<br>     *hexo init blog      初始化，blog是你要创建的博客名，例如我的是 hxf9812<br>     *cd blog  进入创建出来的文件夹<br>     *npm install<br>     *hexo s  打开服务，接下来就可以在本地（默认localhost:4000）下查看hexo页面了<br>6.进入你创建的blog文件下，对_config.yml做一些修改，</p>
 <p>url: 你的页面地址 例如我的 <a href="https://hxf9812.github.io">https://hxf9812.github.io</a><br>deploy:    type: git     repo:到你的仓库中复制就好了 （我的是<a href="https://github.com/hxf9812/hxf9812.github.io.git）" target="_blank" rel="noopener">https://github.com/hxf9812/hxf9812.github.io.git）</a><br>branch: master</p>
 <p>做完以上修改，就可以把hexo部署到github上去了，但是如果在cmd上操作，还需要额外的一步<br>npm install hexo-deployer-git –save<br>然后，在cmd中 * hexo g * 本命令用来生成静态文件， * hexo d * 本命令用来将静态文件部署到<br>gihub上，  * hexo s * 本命令用来启动本地服务，可以本地预览<br>7.简单了解markdown ， 其实简单来说就是用纯文本写网页，然后通过hexo node.js转换为了html，<br>其中要用到的命令 * hexo new 文件名 * 本命令用来在博客目录下soure下_posts下生成一个.md文件，<br>这个.md文件就是新的一篇博客<br>8.老规矩，到hexo suka官网下载，然后简单看一下怎么用这个主题，发现官方给了很详细的说明。</p>
 <hr>
@@ -540,7 +540,7 @@ window.oldVersion = [
 
 <p class="post-footer-info mb-0 pt-0">Published at&nbsp;<time datetime="2019-08-07T10:01:46.000Z" itemprop="datePublished">2019-08-07</time>
 
-    , Updated at&nbsp;<time datetime="2019-08-08T10:17:41.546Z" itemprop="dateModified">2019-08-08</time>
+    , Updated at&nbsp;<time datetime="2019-08-08T10:19:29.827Z" itemprop="dateModified">2019-08-08</time>
 
 </p>
 <p class="post-footer-info mb-0 pt-2">
