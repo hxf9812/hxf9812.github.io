@@ -272,7 +272,7 @@ git有三个区块，工作区、暂存区、本地库git基本命令
     },
     
     "datePublished": "2019-08-09T08:09:46.000Z",
-    "dateModified": "2019-08-09T08:42:40.844Z",
+    "dateModified": "2019-08-09T09:36:50.240Z",
     "author": {
         "@type": "Person",
         "name": "hxf9812",
@@ -523,8 +523,9 @@ git有三个区块，工作区、暂存区、本地库git基本命令
 <blockquote>
 <p>git init  初始化<br>git add  添加到暂存区<br>git commit  添加到本地库<br>git status  查看状态<br>git config [user.name/user.email] 配置身份标识<br>git log 查看版本记录  git reflog 显示简略版<br>git reset –[hard/mixed/soft] HEAD(哈希值) 版本变更<br>git branch -v   查看所有分支<br>git branch ..  创建分支<br>git checkout ..  切换分支<br>git merge ..  分支合并</p>
 </blockquote>
+<p>git本地库和远程库的连接——新建本地库——新建远程库——(git remote add 别名 远程库地址)——<br>(git pull 别名 分支)</p>
 <hr>
-<p><strong>git机制原理</strong><br>1.git不同版本间文件管理采用  <em>快照方式</em><br>2.git主要用hash算法标识每个文件<br>3.git每次提交操作都对应一个commit对象，该对象中包含一个tree对象，tree对象中包含每个文件的文件名和hash值<br>4.不同版本间通过Commit对象中的parents对象，形成链接<br>5.版本控制本质上是HEAD指针的移动，分支的创建是创建了一个和HEAD指向相同文件的指针</p>
+<p><strong>git机制原理</strong><br>1.git不同版本间文件管理采用  <em>快照方式</em><br>2.git主要用hash算法标识每个文件<br>3.git每次提交操作都对应一个commit对象，该对象中包含一个tree对象，tree对象中包含每个文件的文件名和hash值<br>4.不同版本间通过Commit对象中的parents对象，形成链接<br>5.版本控制本质上是HEAD指针的移动，分支的创建是创建了一个和HEAD指向相同文件的指针<br>6.git pull操作其实是fetch加上merge  (git fetch [别名] [分支]) (git merge [别名/分支名])</p>
 
                     </article>
                     
