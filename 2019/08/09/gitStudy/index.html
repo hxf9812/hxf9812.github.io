@@ -61,7 +61,7 @@ window.oldVersion = [
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
 
 <!-- Title -->
-<title>hexo博客搭建 | 风不觉</title>
+<title>git的原理 | 风不觉</title>
 
 <!-- favicon -->
 <!-- Favicons -->
@@ -82,7 +82,10 @@ window.oldVersion = [
 <meta name="format-detection" content="telephone=no">
 
 <!-- Description -->
-<meta name="description" content="  闲下来以后，决定把一直想搭建的博客搭建出来，整个过程反倒比想象中要容易很多，我采用的是gihub加hexo加suka，虽然功能简单、页面简陋，但是依然很开心，毕竟很容易就踏出了第一步，希望之后多多深入，开阔眼界，学习...">
+<meta name="description" content="用github搭建了博客，自然要学习一下git，发现git原理很有意思，特别总结一下
+
+git有三个区块，工作区、暂存区、本地库git基本命令
+">
 
 <!-- Keywords -->
 <meta name="keywords" content>
@@ -207,22 +210,25 @@ window.oldVersion = [
 
 
     <!-- ### The Open Graph & Twitter Card Protocol ### -->
-    <meta property="og:title" content="hexo博客搭建 | 风不觉">
+    <meta property="og:title" content="git的原理 | 风不觉">
 <meta property="og:site_name" content="风不觉">
 
 <meta property="og:locale" content="en">
 
-<meta property="og:url" content="http://hxf9812.github.io/2019/08/07/firstBlog/">
+<meta property="og:url" content="http://hxf9812.github.io/2019/08/09/gitStudy/">
 <meta property="og:image" content="http://hxf9812.github.io/img/suka-favicon.ico">
 
-<meta property="og:description" content="  闲下来以后，决定把一直想搭建的博客搭建出来，整个过程反倒比想象中要容易很多，我采用的是gihub加hexo加suka，虽然功能简单、页面简陋，但是依然很开心，毕竟很容易就踏出了第一步，希望之后多多深入，开阔眼界，学习...">
+<meta property="og:description" content="用github搭建了博客，自然要学习一下git，发现git原理很有意思，特别总结一下
+
+git有三个区块，工作区、暂存区、本地库git基本命令
+">
 
 <meta name="twitter:card" content="summary">
 
 
     <meta property="og:type" content="article">
-    <meta property="article:published_time" content="2019-08-07T10:01:46.000Z">
-    <meta property="article:modified_time" content="2019-08-07T10:01:46.000Z">
+    <meta property="article:published_time" content="2019-08-09T08:09:46.000Z">
+    <meta property="article:modified_time" content="2019-08-09T08:09:46.000Z">
     <meta property="article:author" content="hxf9812">
     <meta property="og:article:tag" content> 
 
@@ -241,7 +247,7 @@ window.oldVersion = [
 
 
     <!-- ### Canonical link ### -->
-    <link rel="canonical" href="http://hxf9812.github.io/2019/08/07/firstBlog/">
+    <link rel="canonical" href="http://hxf9812.github.io/2019/08/09/gitStudy/">
 
     <!-- ### Structured Data ### -->
     
@@ -251,22 +257,22 @@ window.oldVersion = [
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
-    "url": "http://hxf9812.github.io/2019/08/07/firstBlog/",
+    "url": "http://hxf9812.github.io/2019/08/09/gitStudy/",
     "@type": "BlogPosting",
     "logo": "http://hxf9812.github.io/img/suka-favicon.ico",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "http://hxf9812.github.io/2019/08/07/firstBlog/"
+        "@id": "http://hxf9812.github.io/2019/08/09/gitStudy/"
     },
-    "headline": "hexo博客搭建 | 风不觉",
+    "headline": "git的原理 | 风不觉",
     
     "image": {
         "@type": "ImageObject",
         "url": "http://hxf9812.github.io/img/suka-favicon.ico"
     },
     
-    "datePublished": "2019-08-07T10:01:46.000Z",
-    "dateModified": "2019-08-09T08:05:01.080Z",
+    "datePublished": "2019-08-09T08:09:46.000Z",
+    "dateModified": "2019-08-09T08:42:40.844Z",
     "author": {
         "@type": "Person",
         "name": "hxf9812",
@@ -292,7 +298,10 @@ window.oldVersion = [
     },
     
     "keywords": "",
-    "description": "  闲下来以后，决定把一直想搭建的博客搭建出来，整个过程反倒比想象中要容易很多，我采用的是gihub加hexo加suka，虽然功能简单、页面简陋，但是依然很开心，毕竟很容易就踏出了第一步，希望之后多多深入，开阔眼界，学习..."
+    "description": "用github搭建了博客，自然要学习一下git，发现git原理很有意思，特别总结一下
+
+git有三个区块，工作区、暂存区、本地库git基本命令
+"
 }
 </script>
 
@@ -369,28 +378,28 @@ window.oldVersion = [
         <!-- Share LinkedIn -->
         
         <li class="menu-item">
-            <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://hxf9812.github.io&title=hexo博客搭建" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://hxf9812.github.io&title=git的原理" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
         </li>
         
 
         <!-- Share QQ -->
         
         <li class="menu-item">
-            <a href="http://connect.qq.com/widget/shareqq/index.html?site=风不觉&title=hexo博客搭建&summary=&pics=http://hxf9812.github.io/img/suka-favicon.ico&url=http://hxf9812.github.io" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=风不觉&title=git的原理&summary=&pics=http://hxf9812.github.io/img/suka-favicon.ico&url=http://hxf9812.github.io" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
         </li>
         
 
         <!-- Share Telegram -->
         
         <li class="menu-item">
-            <a href="https://t.me/share/url?url=http://hxf9812.github.io&text=hexo博客搭建" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+            <a href="https://t.me/share/url?url=http://hxf9812.github.io&text=git的原理" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
         </li>
         
 
         <!-- QRCode -->
         
         <li class="menu-item">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAAAAABQV18IAAAB8ElEQVR42u3by27DMAxEUf//T7dbQ6A4Q8cLkb7etEgC6bTQixRz/R34XKBAgQIVoK7kub9///z6+vr72q7TD6hZqHDQLZC10917UWd2P6BGoaKBmXWsJkHUhuwH1CdQ0aB1JoJadEF9GxVhItQOAuqbqN1AzjbZbJBnE+PnUwKo41EqcHjr56vRDKhjUTLpIDbqXZCQDfqfsy6gjkZlG64TXO6CUbcta0UH1QqlggRnIa0e6LabO6gRKJXQcAIDhbMPfKBGoLKBlzXiXAYoYHrIA9UaVVko1cFOJXCzfwCoGSjVmZO4cDZsa+CDGonKFtTKYqkOfuHnQY1BqQR+ZeF0Ak9r8QTVGuUAniTNXpl9oNqh3M3Y+QOchEk6YUCNQKmkltpk3QNgOesCqi3KTUS4gzULREu3WKDaopwkqipcfnJ5aZ0SQLVFOYlY51Ipu2C0AhBQI1DqQtvdWJ3LI5lAATUOlX0B50kiQ02atFgCVFtUtai0kjBTxTelTB6oNih5mDeLlN1gNG0P1AhUpaBZLa7uxaSddQHVFqWKbpzEWFaM6iTSQM1DqQsiZ5GtbNjhgQ/UJ1CVxVAN8McVHKDGoSqFFE6AYR3yQLVHqUsitziiUjgIai7KCRyyIEJ9UcO+KAc1AnXSAwoUKFC35x/3uL8O0Il1qAAAAABJRU5ErkJggg==" alr="QRCode">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAAAAABQV18IAAAB4ElEQVR42u3awVLDMAyE4bz/S8OJGYaxdlehB1v+cymENPnaMZYs6/na8HhAgQIFaoF6xPH3GnnD4j0/56LngBqDqh6y+r3CVtd3ngNqFmo1MFd/V4N/dW11n+WHBHUNajXRyQG7+BkUqGrQdoK3+5CgZqOqgauSNRWsXYD/V5YAanuUGryffP3YagbU1ihbdBCTZBK43SL2VdUF1NYoNRAVoLsgVfcHNQuVBk0XkJOEz14PagSqswBNFw6uMFJ9AaBmoaoiWJrwdQqy7cwT1HEo9wY36F1SmBRAQM1CdQawO+c2mdSHAjUD5WBpspe+yg0nUKNQyQIi3UBKFyByMQpqBCrZCErOqY1IVVQDNQOVTnLqxiq5U+dB3YFKiqZ2wAabkXF1GNSxKJV8uSaubjIY7ziAOhLV2tAJCh5vGy1AzUGlDRJvEj9XAAE1F5UE5PQfwC1wZaAHNQrVKZimDRFJYw+oe1AumKbNXGnzM6g5KNu8FzQ6pA+1iSKoEag08KaFr26jRdSAA+o4lCtupUXYtAEH1B2obsBVk6Mr8JdfBKhrUMmEmBb025uQoMai0slUBW01cYKah3JNNK6pNE3wXu1igToOpYKmu3ECKAsaqmgG6ljUTgcoUKBA/Tq+AeT0sQC7KWLaAAAAAElFTkSuQmCC" alr="QRCode">
         </li>
         
 
@@ -415,7 +424,7 @@ window.oldVersion = [
                 <!-- # Post Header Info # -->
                 <div class="card-header">
                     
-    <h1 class="card-title h3 mb-2">hexo博客搭建</h1>
+    <h1 class="card-title h3 mb-2">git的原理</h1>
 
 
 
@@ -423,7 +432,7 @@ window.oldVersion = [
 <div class="post-header-info">
     <p class="post-header-info-left text-gray">
         <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="hxf9812's Avatar">
-        <span>2019-08-07</span>
+        <span>2019-08-09</span>
         
         
             <!-- Busuanzi Post Views -->
@@ -444,56 +453,56 @@ window.oldVersion = [
     <!-- Share Weibo -->
     
     <li class="menu-item">
-        <a href="http://service.weibo.com/share/share.php?appkey=&title=hexo博客搭建&url=http://hxf9812.github.io/2019/08/07/firstBlog/&pic=http://hxf9812.github.io/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+        <a href="http://service.weibo.com/share/share.php?appkey=&title=git的原理&url=http://hxf9812.github.io/2019/08/09/gitStudy/&pic=http://hxf9812.github.io/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
     </li>
     
 
     <!-- Share Twitter -->
     
     <li class="menu-item">
-        <a href="https://twitter.com/intent/tweet?text=hexo博客搭建&url=http://hxf9812.github.io/2019/08/07/firstBlog/&via=hxf9812" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+        <a href="https://twitter.com/intent/tweet?text=git的原理&url=http://hxf9812.github.io/2019/08/09/gitStudy/&via=hxf9812" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
     </li>
     
 
     <!-- Share Facebook -->
     
     <li class="menu-item">
-        <a href="https://www.facebook.com/sharer/sharer.php?u=http://hxf9812.github.io/2019/08/07/firstBlog/" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://hxf9812.github.io/2019/08/09/gitStudy/" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
     </li>
     
 
     <!-- Share Google+ -->
     
     <li class="menu-item">
-        <a href="https://plus.google.com/share?url=http://hxf9812.github.io/2019/08/07/firstBlog/" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+        <a href="https://plus.google.com/share?url=http://hxf9812.github.io/2019/08/09/gitStudy/" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
     </li>
     
 
     <!-- Share LinkedIn -->
     
     <li class="menu-item">
-        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://hxf9812.github.io/2019/08/07/firstBlog/&title=风不觉" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://hxf9812.github.io/2019/08/09/gitStudy/&title=风不觉" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
     </li>
     
 
     <!-- Share QQ -->
     
     <li class="menu-item">
-        <a href="http://connect.qq.com/widget/shareqq/index.html?site=风不觉&title=风不觉&summary=&pics=http://hxf9812.github.io/img/suka-favicon.ico&url=http://hxf9812.github.io/2019/08/07/firstBlog/" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+        <a href="http://connect.qq.com/widget/shareqq/index.html?site=风不觉&title=风不觉&summary=&pics=http://hxf9812.github.io/img/suka-favicon.ico&url=http://hxf9812.github.io/2019/08/09/gitStudy/" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
     </li>
     
 
     <!-- Share Telegram -->
     
     <li class="menu-item">
-        <a href="https://t.me/share/url?url=http://hxf9812.github.io/2019/08/07/firstBlog/&text=风不觉" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+        <a href="https://t.me/share/url?url=http://hxf9812.github.io/2019/08/09/gitStudy/&text=风不觉" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
     </li>
     
 
     <!-- QRCode -->
     
     <li class="menu-item">
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAAAAABQV18IAAAB8ElEQVR42u3by27DMAxEUf//T7dbQ6A4Q8cLkb7etEgC6bTQixRz/R34XKBAgQIVoK7kub9///z6+vr72q7TD6hZqHDQLZC10917UWd2P6BGoaKBmXWsJkHUhuwH1CdQ0aB1JoJadEF9GxVhItQOAuqbqN1AzjbZbJBnE+PnUwKo41EqcHjr56vRDKhjUTLpIDbqXZCQDfqfsy6gjkZlG64TXO6CUbcta0UH1QqlggRnIa0e6LabO6gRKJXQcAIDhbMPfKBGoLKBlzXiXAYoYHrIA9UaVVko1cFOJXCzfwCoGSjVmZO4cDZsa+CDGonKFtTKYqkOfuHnQY1BqQR+ZeF0Ak9r8QTVGuUAniTNXpl9oNqh3M3Y+QOchEk6YUCNQKmkltpk3QNgOesCqi3KTUS4gzULREu3WKDaopwkqipcfnJ5aZ0SQLVFOYlY51Ipu2C0AhBQI1DqQtvdWJ3LI5lAATUOlX0B50kiQ02atFgCVFtUtai0kjBTxTelTB6oNih5mDeLlN1gNG0P1AhUpaBZLa7uxaSddQHVFqWKbpzEWFaM6iTSQM1DqQsiZ5GtbNjhgQ/UJ1CVxVAN8McVHKDGoSqFFE6AYR3yQLVHqUsitziiUjgIai7KCRyyIEJ9UcO+KAc1AnXSAwoUKFC35x/3uL8O0Il1qAAAAABJRU5ErkJggg==" alt="QRCode">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAAAAABQV18IAAAB4ElEQVR42u3awVLDMAyE4bz/S8OJGYaxdlehB1v+cymENPnaMZYs6/na8HhAgQIFaoF6xPH3GnnD4j0/56LngBqDqh6y+r3CVtd3ngNqFmo1MFd/V4N/dW11n+WHBHUNajXRyQG7+BkUqGrQdoK3+5CgZqOqgauSNRWsXYD/V5YAanuUGryffP3YagbU1ihbdBCTZBK43SL2VdUF1NYoNRAVoLsgVfcHNQuVBk0XkJOEz14PagSqswBNFw6uMFJ9AaBmoaoiWJrwdQqy7cwT1HEo9wY36F1SmBRAQM1CdQawO+c2mdSHAjUD5WBpspe+yg0nUKNQyQIi3UBKFyByMQpqBCrZCErOqY1IVVQDNQOVTnLqxiq5U+dB3YFKiqZ2wAabkXF1GNSxKJV8uSaubjIY7ziAOhLV2tAJCh5vGy1AzUGlDRJvEj9XAAE1F5UE5PQfwC1wZaAHNQrVKZimDRFJYw+oe1AumKbNXGnzM6g5KNu8FzQ6pA+1iSKoEag08KaFr26jRdSAA+o4lCtupUXYtAEH1B2obsBVk6Mr8JdfBKhrUMmEmBb025uQoMai0slUBW01cYKah3JNNK6pNE3wXu1igToOpYKmu3ECKAsaqmgG6ljUTgcoUKBA/Tq+AeT0sQC7KWLaAAAAAElFTkSuQmCC" alt="QRCode">
     </li>
     
 
@@ -508,32 +517,14 @@ window.oldVersion = [
                         
                     
                     <article id="post-content">
-                        <p>  闲下来以后，决定把一直想搭建的博客搭建出来，<br>整个过程反倒比想象中要容易很多，我采用的是gihub加hexo加suka，虽然功能简单、页面简陋，但是依然很开心，毕竟很容易就踏出了第一步，希望之后多多深入，开阔眼界，学习分享更多的技术。</p>
-<p>简单的把整个搭建过程分享一下<br>基本步骤<br>1.注册github账号<br>2.安装git for win<br>3.配置githubSSH<br>4.安装node<br>5.安装配置hexo<br>6.部署hexo<br>7.简单认识markdown<br>8.添加suka主题</p>
-<p> 因为很多东西之前都没有接触过，所以自然会有对新内容抵触恐惧的心理，其实勇敢迈出第一步，一切都会变的简单。</p>
+                        <p>用github搭建了博客，自然要学习一下git，发现git原理很有意思，特别总结一下</p>
 <hr>
-<p> 1.<strong>注册github账号,创建仓库</strong></p>
-<p> 2.<strong>安装git for win</strong><br> 进入<a href="https://gitforwindows.org/" target="_blank" rel="noopener">https://gitforwindows.org/</a>官网下载，安装，无脑下一步</p>
-<p> 3.<strong>配置githubSSH</strong><br> 在git安装目录下打开git-bash.exe，输入 <em>ssh-keygen -t rsa -C “你的邮箱”</em>  回车后密匙生成在默认位置 <em>c:\Users\Administrator.ssh\id_rsa</em> ,点开查看，复制粘贴到 github主页—点击头像—setting—SSH and GPG keys下</p>
-<p> 4.<strong>安装node</strong><br> 官网下载nodejs,<a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">https://nodejs.org/zh-cn/</a>,无脑下一步安装</p>
-<p> 5.<strong>安装配置hexo</strong><br> 打开hexo官网<a href="https://hexo.io/zh-cn/index.html" target="_blank" rel="noopener">https://hexo.io/zh-cn/index.html</a>，已经有说明</p>
-<p>  <em>第一步</em> -&gt; 在电脑创建文件夹，用来存放hexo代码，在cmd下，进入刚创建出来的文件夹下，hexo命令都是在该文件夹下才能生效，这是很重要的一点<br>  <em>第二步</em> -&gt; npm install hexo-cli -g 安装hexo<br>  <em>第三步</em> -&gt; hexo init blog      初始化，blog是你要创建的博客名，例如我的是 hxf9812<br>  <em>第四步</em> -&gt; cd blog  进入创建出来的文件夹<br>  <em>第五步</em> -&gt; npm install<br>  <em>第六步</em> -&gt; hexo s  打开服务，接下来就可以在本地（默认localhost:4000）下查看hexo页面了</p>
-<p>6.<strong>部署hexo</strong><br>进入你创建的blog文件下，对_config.yml做一些修改，</p>
+<p>git有三个区块，工作区、暂存区、本地库<br><strong>git基本命令</strong></p>
 <blockquote>
-<p>url: 你的页面地址  例如我的 <a href="https://hxf9812.github.io">https://hxf9812.github.io</a></p>
+<p>git init  初始化<br>git add  添加到暂存区<br>git commit  添加到本地库<br>git status  查看状态<br>git config [user.name/user.email] 配置身份标识<br>git log 查看版本记录  git reflog 显示简略版<br>git reset –[hard/mixed/soft] HEAD(哈希值) 版本变更<br>git branch -v   查看所有分支<br>git branch ..  创建分支<br>git checkout ..  切换分支<br>git merge ..  分支合并</p>
 </blockquote>
-<blockquote>
-<p>deploy: </p>
-<blockquote>
-<p>type: git<br>repo:到你的仓库中复制就好了(我的是<a href="https://github.com/hxf9812/hxf9812.github.io.git" target="_blank" rel="noopener">https://github.com/hxf9812/hxf9812.github.io.git</a>)<br>branch: master</p>
-</blockquote>
-</blockquote>
-<p>做完以上修改，就可以把hexo部署到github上去了，但是如果在cmd上操作，还需要额外的一步<br>npm install hexo-deployer-git –save<br>然后，在cmd中 * hexo g * 本命令用来生成静态文件， * hexo d * 本命令用来将静态文件部署到<br>gihub上，  * hexo s * 本命令用来启动本地服务，可以本地预览</p>
-<p>7.<strong>简单认识markdown</strong><br>简单了解markdown</p>
-<p>8.<strong>添加suka主题</strong><br>到hexo suka官网下载<a href="https://theme-suka.skk.moe/" target="_blank" rel="noopener">https://theme-suka.skk.moe/</a>,然后简单看一下怎么用这个主题，发现官方给了很详细的说明。</p>
 <hr>
-<p>完成这些步骤以后，博客就搭建出来了，开心</p>
-<p>学无止境，你我共勉</p>
+<p><strong>git机制原理</strong><br>1.git不同版本间文件管理采用  <em>快照方式</em><br>2.git主要用hash算法标识每个文件<br>3.git每次提交操作都对应一个commit对象，该对象中包含一个tree对象，tree对象中包含每个文件的文件名和hash值<br>4.不同版本间通过Commit对象中的parents对象，形成链接<br>5.版本控制本质上是HEAD指针的移动，分支的创建是创建了一个和HEAD指向相同文件的指针</p>
 
                     </article>
                     
@@ -554,9 +545,7 @@ window.oldVersion = [
     </script>
 
 
-<p class="post-footer-info mb-0 pt-0">Published at&nbsp;<time datetime="2019-08-07T10:01:46.000Z" itemprop="datePublished">2019-08-07</time>
-
-    , Updated at&nbsp;<time datetime="2019-08-09T08:05:01.080Z" itemprop="dateModified">2019-08-09</time>
+<p class="post-footer-info mb-0 pt-0">Published at&nbsp;<time datetime="2019-08-09T08:09:46.000Z" itemprop="datePublished">2019-08-09</time>
 
 </p>
 <p class="post-footer-info mb-0 pt-2">
@@ -572,20 +561,13 @@ window.oldVersion = [
 <ul class="pagination">
     <!-- Prev Nav -->
     
-        <li class="page-item page-prev">
-            <a href="/2019/08/09/gitStudy/" rel="prev">
-                <div class="page-item-title"><i class="icon icon-back" aria-hidden="true"></i></div>
-                <div class="page-item-subtitle">git的原理</div>
-            </a>
-        </li>
-    
 
     <!-- Next Nav -->
     
         <li class="page-item page-next">
-            <a href="/2019/08/07/hello-world/" rel="next">
+            <a href="/2019/08/07/firstBlog/" rel="next">
                 <div class="page-item-title"><i class="icon icon-forward" aria-hidden="true"></i></div>
-                <div class="page-item-subtitle">Hello World</div>
+                <div class="page-item-subtitle">hexo博客搭建</div>
             </a>
         </li>
     
