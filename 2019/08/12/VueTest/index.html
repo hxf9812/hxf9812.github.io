@@ -61,7 +61,7 @@ window.oldVersion = [
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
 
 <!-- Title -->
-<title>git的原理 | 风不觉</title>
+<title>VueTest | 风不觉</title>
 
 <!-- favicon -->
 <!-- Favicons -->
@@ -82,10 +82,9 @@ window.oldVersion = [
 <meta name="format-detection" content="telephone=no">
 
 <!-- Description -->
-<meta name="description" content="用github搭建了博客，自然要学习一下git，发现git原理很有意思，特别总结一下
+<meta name="description" content="事件修饰符：
 
-git有三个区块，工作区、暂存区、本地库git基本命令
-">
+stop:阻止冒泡prevent:阻止默认事件capture:添加事件侦听器时使用的模式self:只当事件在该元素本身触发时触发回调once:...">
 
 <!-- Keywords -->
 <meta name="keywords" content>
@@ -210,25 +209,24 @@ git有三个区块，工作区、暂存区、本地库git基本命令
 
 
     <!-- ### The Open Graph & Twitter Card Protocol ### -->
-    <meta property="og:title" content="git的原理 | 风不觉">
+    <meta property="og:title" content="VueTest | 风不觉">
 <meta property="og:site_name" content="风不觉">
 
 <meta property="og:locale" content="en">
 
-<meta property="og:url" content="http://hxf9812.github.io/2019/08/09/gitStudy/">
+<meta property="og:url" content="http://hxf9812.github.io/2019/08/12/VueTest/">
 <meta property="og:image" content="http://hxf9812.github.io/img/suka-favicon.ico">
 
-<meta property="og:description" content="用github搭建了博客，自然要学习一下git，发现git原理很有意思，特别总结一下
+<meta property="og:description" content="事件修饰符：
 
-git有三个区块，工作区、暂存区、本地库git基本命令
-">
+stop:阻止冒泡prevent:阻止默认事件capture:添加事件侦听器时使用的模式self:只当事件在该元素本身触发时触发回调once:...">
 
 <meta name="twitter:card" content="summary">
 
 
     <meta property="og:type" content="article">
-    <meta property="article:published_time" content="2019-08-09T08:09:46.000Z">
-    <meta property="article:modified_time" content="2019-08-09T08:09:46.000Z">
+    <meta property="article:published_time" content="2019-08-12T02:59:22.000Z">
+    <meta property="article:modified_time" content="2019-08-12T02:59:22.000Z">
     <meta property="article:author" content="hxf9812">
     <meta property="og:article:tag" content> 
 
@@ -247,7 +245,7 @@ git有三个区块，工作区、暂存区、本地库git基本命令
 
 
     <!-- ### Canonical link ### -->
-    <link rel="canonical" href="http://hxf9812.github.io/2019/08/09/gitStudy/">
+    <link rel="canonical" href="http://hxf9812.github.io/2019/08/12/VueTest/">
 
     <!-- ### Structured Data ### -->
     
@@ -257,22 +255,22 @@ git有三个区块，工作区、暂存区、本地库git基本命令
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
-    "url": "http://hxf9812.github.io/2019/08/09/gitStudy/",
+    "url": "http://hxf9812.github.io/2019/08/12/VueTest/",
     "@type": "BlogPosting",
     "logo": "http://hxf9812.github.io/img/suka-favicon.ico",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "http://hxf9812.github.io/2019/08/09/gitStudy/"
+        "@id": "http://hxf9812.github.io/2019/08/12/VueTest/"
     },
-    "headline": "git的原理 | 风不觉",
+    "headline": "VueTest | 风不觉",
     
     "image": {
         "@type": "ImageObject",
         "url": "http://hxf9812.github.io/img/suka-favicon.ico"
     },
     
-    "datePublished": "2019-08-09T08:09:46.000Z",
-    "dateModified": "2019-08-09T09:36:50.240Z",
+    "datePublished": "2019-08-12T02:59:22.000Z",
+    "dateModified": "2019-08-13T04:13:44.684Z",
     "author": {
         "@type": "Person",
         "name": "hxf9812",
@@ -298,10 +296,9 @@ git有三个区块，工作区、暂存区、本地库git基本命令
     },
     
     "keywords": "",
-    "description": "用github搭建了博客，自然要学习一下git，发现git原理很有意思，特别总结一下
+    "description": "事件修饰符：
 
-git有三个区块，工作区、暂存区、本地库git基本命令
-"
+stop:阻止冒泡prevent:阻止默认事件capture:添加事件侦听器时使用的模式self:只当事件在该元素本身触发时触发回调once:..."
 }
 </script>
 
@@ -378,28 +375,28 @@ git有三个区块，工作区、暂存区、本地库git基本命令
         <!-- Share LinkedIn -->
         
         <li class="menu-item">
-            <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://hxf9812.github.io&title=git的原理" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://hxf9812.github.io&title=VueTest" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
         </li>
         
 
         <!-- Share QQ -->
         
         <li class="menu-item">
-            <a href="http://connect.qq.com/widget/shareqq/index.html?site=风不觉&title=git的原理&summary=&pics=http://hxf9812.github.io/img/suka-favicon.ico&url=http://hxf9812.github.io" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=风不觉&title=VueTest&summary=&pics=http://hxf9812.github.io/img/suka-favicon.ico&url=http://hxf9812.github.io" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
         </li>
         
 
         <!-- Share Telegram -->
         
         <li class="menu-item">
-            <a href="https://t.me/share/url?url=http://hxf9812.github.io&text=git的原理" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+            <a href="https://t.me/share/url?url=http://hxf9812.github.io&text=VueTest" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
         </li>
         
 
         <!-- QRCode -->
         
         <li class="menu-item">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAAAAABQV18IAAAB4ElEQVR42u3awVLDMAyE4bz/S8OJGYaxdlehB1v+cymENPnaMZYs6/na8HhAgQIFaoF6xPH3GnnD4j0/56LngBqDqh6y+r3CVtd3ngNqFmo1MFd/V4N/dW11n+WHBHUNajXRyQG7+BkUqGrQdoK3+5CgZqOqgauSNRWsXYD/V5YAanuUGryffP3YagbU1ihbdBCTZBK43SL2VdUF1NYoNRAVoLsgVfcHNQuVBk0XkJOEz14PagSqswBNFw6uMFJ9AaBmoaoiWJrwdQqy7cwT1HEo9wY36F1SmBRAQM1CdQawO+c2mdSHAjUD5WBpspe+yg0nUKNQyQIi3UBKFyByMQpqBCrZCErOqY1IVVQDNQOVTnLqxiq5U+dB3YFKiqZ2wAabkXF1GNSxKJV8uSaubjIY7ziAOhLV2tAJCh5vGy1AzUGlDRJvEj9XAAE1F5UE5PQfwC1wZaAHNQrVKZimDRFJYw+oe1AumKbNXGnzM6g5KNu8FzQ6pA+1iSKoEag08KaFr26jRdSAA+o4lCtupUXYtAEH1B2obsBVk6Mr8JdfBKhrUMmEmBb025uQoMai0slUBW01cYKah3JNNK6pNE3wXu1igToOpYKmu3ECKAsaqmgG6ljUTgcoUKBA/Tq+AeT0sQC7KWLaAAAAAElFTkSuQmCC" alr="QRCode">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAAAAABQV18IAAAB20lEQVR42u3awXKDMAxFUf7/p9tNFxlq610HFkZcNp2hAZ/MOJYt6fjZ8DpEiRIlaoA6iuvfQ3/3zv8bPXO+R8YR1Qc1nHSnAdKXqJ7H44hqhRpNzM/7o4k+e7b6cczGEfVu1MpCKkrU7GXnQWfwhBf1HhTZ0KGNGgi8l3cJorZHVQPd+fe204yorVEx6QACNQ3Wt2VdRG2NqiYiDcT0QBsPsKJaoqpJO/vMaND0TpQ0E/VI1EoibPbytKjShVVUD9Q3yYvRYCmpTxZRUT1QswMoCb5kkzcrGg3BolqgyMJZ3asWx5T0F9UbVW3Eqs/RwFu9W1Q/VArCJOFBDqcpMSuqJypt6FKRcuVAi6pYoh6HokkxGlzJISEWIUU9HkWCLikq0aYwnHUR9UhUKlJfSXaQgC6qL6pK0KdmGrJYpgOGqF6oNIHJhi4tkLMDiaj+qG+DND2IlFBR7VAkqUoabFaLmaJ6okjiYqWhhjT24MqoqEehaML0agMOSqCJaoEijcYkSVEtuqSIIKoXik5wGmjTD0LUO1DVRm71sJkC9/QLiXoVijbY3F4ZFdUaRSErRe/LE13UtihSRCRNEVVyPxbIRbVBkaJ1akytmpdJskNUH9ROlyhRokR9XL+GZ3FAJaRTjgAAAABJRU5ErkJggg==" alr="QRCode">
         </li>
         
 
@@ -424,7 +421,7 @@ git有三个区块，工作区、暂存区、本地库git基本命令
                 <!-- # Post Header Info # -->
                 <div class="card-header">
                     
-    <h1 class="card-title h3 mb-2">git的原理</h1>
+    <h1 class="card-title h3 mb-2">VueTest</h1>
 
 
 
@@ -432,7 +429,7 @@ git有三个区块，工作区、暂存区、本地库git基本命令
 <div class="post-header-info">
     <p class="post-header-info-left text-gray">
         <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="hxf9812's Avatar">
-        <span>2019-08-09</span>
+        <span>2019-08-12</span>
         
         
             <!-- Busuanzi Post Views -->
@@ -453,56 +450,56 @@ git有三个区块，工作区、暂存区、本地库git基本命令
     <!-- Share Weibo -->
     
     <li class="menu-item">
-        <a href="http://service.weibo.com/share/share.php?appkey=&title=git的原理&url=http://hxf9812.github.io/2019/08/09/gitStudy/&pic=http://hxf9812.github.io/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+        <a href="http://service.weibo.com/share/share.php?appkey=&title=VueTest&url=http://hxf9812.github.io/2019/08/12/VueTest/&pic=http://hxf9812.github.io/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
     </li>
     
 
     <!-- Share Twitter -->
     
     <li class="menu-item">
-        <a href="https://twitter.com/intent/tweet?text=git的原理&url=http://hxf9812.github.io/2019/08/09/gitStudy/&via=hxf9812" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+        <a href="https://twitter.com/intent/tweet?text=VueTest&url=http://hxf9812.github.io/2019/08/12/VueTest/&via=hxf9812" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
     </li>
     
 
     <!-- Share Facebook -->
     
     <li class="menu-item">
-        <a href="https://www.facebook.com/sharer/sharer.php?u=http://hxf9812.github.io/2019/08/09/gitStudy/" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://hxf9812.github.io/2019/08/12/VueTest/" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
     </li>
     
 
     <!-- Share Google+ -->
     
     <li class="menu-item">
-        <a href="https://plus.google.com/share?url=http://hxf9812.github.io/2019/08/09/gitStudy/" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+        <a href="https://plus.google.com/share?url=http://hxf9812.github.io/2019/08/12/VueTest/" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
     </li>
     
 
     <!-- Share LinkedIn -->
     
     <li class="menu-item">
-        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://hxf9812.github.io/2019/08/09/gitStudy/&title=风不觉" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://hxf9812.github.io/2019/08/12/VueTest/&title=风不觉" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
     </li>
     
 
     <!-- Share QQ -->
     
     <li class="menu-item">
-        <a href="http://connect.qq.com/widget/shareqq/index.html?site=风不觉&title=风不觉&summary=&pics=http://hxf9812.github.io/img/suka-favicon.ico&url=http://hxf9812.github.io/2019/08/09/gitStudy/" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+        <a href="http://connect.qq.com/widget/shareqq/index.html?site=风不觉&title=风不觉&summary=&pics=http://hxf9812.github.io/img/suka-favicon.ico&url=http://hxf9812.github.io/2019/08/12/VueTest/" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
     </li>
     
 
     <!-- Share Telegram -->
     
     <li class="menu-item">
-        <a href="https://t.me/share/url?url=http://hxf9812.github.io/2019/08/09/gitStudy/&text=风不觉" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+        <a href="https://t.me/share/url?url=http://hxf9812.github.io/2019/08/12/VueTest/&text=风不觉" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
     </li>
     
 
     <!-- QRCode -->
     
     <li class="menu-item">
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAAAAABQV18IAAAB4ElEQVR42u3awVLDMAyE4bz/S8OJGYaxdlehB1v+cymENPnaMZYs6/na8HhAgQIFaoF6xPH3GnnD4j0/56LngBqDqh6y+r3CVtd3ngNqFmo1MFd/V4N/dW11n+WHBHUNajXRyQG7+BkUqGrQdoK3+5CgZqOqgauSNRWsXYD/V5YAanuUGryffP3YagbU1ihbdBCTZBK43SL2VdUF1NYoNRAVoLsgVfcHNQuVBk0XkJOEz14PagSqswBNFw6uMFJ9AaBmoaoiWJrwdQqy7cwT1HEo9wY36F1SmBRAQM1CdQawO+c2mdSHAjUD5WBpspe+yg0nUKNQyQIi3UBKFyByMQpqBCrZCErOqY1IVVQDNQOVTnLqxiq5U+dB3YFKiqZ2wAabkXF1GNSxKJV8uSaubjIY7ziAOhLV2tAJCh5vGy1AzUGlDRJvEj9XAAE1F5UE5PQfwC1wZaAHNQrVKZimDRFJYw+oe1AumKbNXGnzM6g5KNu8FzQ6pA+1iSKoEag08KaFr26jRdSAA+o4lCtupUXYtAEH1B2obsBVk6Mr8JdfBKhrUMmEmBb025uQoMai0slUBW01cYKah3JNNK6pNE3wXu1igToOpYKmu3ECKAsaqmgG6ljUTgcoUKBA/Tq+AeT0sQC7KWLaAAAAAElFTkSuQmCC" alt="QRCode">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAAAAABQV18IAAAB20lEQVR42u3awXKDMAxFUf7/p9tNFxlq610HFkZcNp2hAZ/MOJYt6fjZ8DpEiRIlaoA6iuvfQ3/3zv8bPXO+R8YR1Qc1nHSnAdKXqJ7H44hqhRpNzM/7o4k+e7b6cczGEfVu1MpCKkrU7GXnQWfwhBf1HhTZ0KGNGgi8l3cJorZHVQPd+fe204yorVEx6QACNQ3Wt2VdRG2NqiYiDcT0QBsPsKJaoqpJO/vMaND0TpQ0E/VI1EoibPbytKjShVVUD9Q3yYvRYCmpTxZRUT1QswMoCb5kkzcrGg3BolqgyMJZ3asWx5T0F9UbVW3Eqs/RwFu9W1Q/VArCJOFBDqcpMSuqJypt6FKRcuVAi6pYoh6HokkxGlzJISEWIUU9HkWCLikq0aYwnHUR9UhUKlJfSXaQgC6qL6pK0KdmGrJYpgOGqF6oNIHJhi4tkLMDiaj+qG+DND2IlFBR7VAkqUoabFaLmaJ6okjiYqWhhjT24MqoqEehaML0agMOSqCJaoEijcYkSVEtuqSIIKoXik5wGmjTD0LUO1DVRm71sJkC9/QLiXoVijbY3F4ZFdUaRSErRe/LE13UtihSRCRNEVVyPxbIRbVBkaJ1akytmpdJskNUH9ROlyhRokR9XL+GZ3FAJaRTjgAAAABJRU5ErkJggg==" alt="QRCode">
     </li>
     
 
@@ -517,15 +514,16 @@ git有三个区块，工作区、暂存区、本地库git基本命令
                         
                     
                     <article id="post-content">
-                        <p>用github搭建了博客，自然要学习一下git，发现git原理很有意思，特别总结一下</p>
-<hr>
-<p>git有三个区块，工作区、暂存区、本地库<br><strong>git基本命令</strong></p>
+                        <p>事件修饰符：</p>
 <blockquote>
-<p>git init  初始化<br>git add  添加到暂存区<br>git commit  添加到本地库<br>git status  查看状态<br>git config [user.name/user.email] 配置身份标识<br>git log 查看版本记录  git reflog 显示简略版<br>git reset –[hard/mixed/soft] HEAD(哈希值) 版本变更<br>git branch -v   查看所有分支<br>git branch ..  创建分支<br>git checkout ..  切换分支<br>git merge ..  分支合并</p>
+<p>stop:阻止冒泡<br>prevent:阻止默认事件<br>capture:添加事件侦听器时使用的模式<br>self:只当事件在该元素本身触发时触发回调<br>once:事件只触发一次</p>
 </blockquote>
-<p>git本地库和远程库的连接——新建本地库——新建远程库——(git remote add 别名 远程库地址)——<br>(git pull 别名 分支)</p>
-<hr>
-<p><strong>git机制原理</strong><br>1.git不同版本间文件管理采用  <em>快照方式</em><br>2.git主要用hash算法标识每个文件<br>3.git每次提交操作都对应一个commit对象，该对象中包含一个tree对象，tree对象中包含每个文件的文件名和hash值<br>4.不同版本间通过Commit对象中的parents对象，形成链接<br>5.版本控制本质上是HEAD指针的移动，分支的创建是创建了一个和HEAD指向相同文件的指针<br>6.git pull操作其实是fetch加上merge  (git fetch [别名] [分支]) (git merge [别名/分支名])</p>
+<p>v-model 唯一实现双向绑定</p>
+<p>属性绑定中对象是无序键值对的集合，如果键中包含-，则必须加引号</p>
+<p>js中数组的常用操作方法</p>
+<blockquote>
+<p>构造 var list= [1,2,3]   /   var list=Array(1,2,3)<br>方法 splice(index,howmany)删除指定元素 sort()排序 pop()删除末尾 shift()删除开头<br>unshift()开头添加 push()末尾添加 reverse()颠倒<br>遍历方法 some() foreach() filter() findIndex() 都会遍历数组，执行操作</p>
+</blockquote>
 
                     </article>
                     
@@ -533,7 +531,7 @@ git有三个区块，工作区、暂存区、本地库git基本命令
 
     <blockquote id="date-expire-notification" class="post-expired-notify">This article was last updated on <span id="date-expire-num"></span> days ago, and the information described in the article may have changed.</blockquote>
     <script>
-        var dateUpdate = Date.parse("2019-08-09");
+        var dateUpdate = Date.parse("2019-08-13");
         var nowDate = new Date();
         var a = nowDate.getTime();
         var b = a - dateUpdate;
@@ -546,7 +544,9 @@ git有三个区块，工作区、暂存区、本地库git基本命令
     </script>
 
 
-<p class="post-footer-info mb-0 pt-0">Published at&nbsp;<time datetime="2019-08-09T08:09:46.000Z" itemprop="datePublished">2019-08-09</time>
+<p class="post-footer-info mb-0 pt-0">Published at&nbsp;<time datetime="2019-08-12T02:59:22.000Z" itemprop="datePublished">2019-08-12</time>
+
+    , Updated at&nbsp;<time datetime="2019-08-13T04:13:44.684Z" itemprop="dateModified">2019-08-13</time>
 
 </p>
 <p class="post-footer-info mb-0 pt-2">
@@ -562,20 +562,13 @@ git有三个区块，工作区、暂存区、本地库git基本命令
 <ul class="pagination">
     <!-- Prev Nav -->
     
-        <li class="page-item page-prev">
-            <a href="/2019/08/12/VueTest/" rel="prev">
-                <div class="page-item-title"><i class="icon icon-back" aria-hidden="true"></i></div>
-                <div class="page-item-subtitle">VueTest</div>
-            </a>
-        </li>
-    
 
     <!-- Next Nav -->
     
         <li class="page-item page-next">
-            <a href="/2019/08/07/firstBlog/" rel="next">
+            <a href="/2019/08/09/gitStudy/" rel="next">
                 <div class="page-item-title"><i class="icon icon-forward" aria-hidden="true"></i></div>
-                <div class="page-item-subtitle">hexo博客搭建</div>
+                <div class="page-item-subtitle">git的原理</div>
             </a>
         </li>
     
