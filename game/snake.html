@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <!--
+        © SukkaW
+        GitHub: https://github.com/SukkaW/hexo-theme-suka
+        Version: 1.3.3
+    -->
+    <script>
+window.lsVersion = "1.3.3",
+window.oldVersion = [
+    
+        
+            "0.2.0","0.0.1","0.1.0","1.0.0","1.0.1","1.1.0","1.1.1","1.2.0","1.3.0","1.3.2"
+        
+    
+]
+</script>
+
+    <!-- ### DNS Prefetch ### -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+<!-- busuanzi -->
+
+    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+
+
+<!-- comment -->
+
+
+
+
+
+
+
+<!-- analytics -->
+
+
+
+
+
+
+
+
+    <!-- ### Preload ### -->
+    
+    <!-- Busuanzi -->
+    
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
+
+
+
+
+
+
+
+    <!-- ### Meta & Title & Info ### -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+
+<!-- Title -->
+<title>风不觉</title>
+
+<!-- favicon -->
+<!-- Favicons -->
+
+    <link rel="icon" type="image/ico" href="/img/suka-favicon.ico">
+
+
+
+
+
+
+<!-- Android Chrome Color -->
+
+    <meta name="theme-color" content="pink">
+
+
+
+<meta name="format-detection" content="telephone=no">
+
+<!-- Description -->
+<meta name="description" content="
+
+	
+		
+		贪吃蛇游戏">
+
+<!-- Keywords -->
+<meta name="keywords" content>
+
+<!-- Disable Fucking Bloody Baidu Tranformation -->
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+    <!-- ### Import File ### -->
+    
+        <!-- spectre.css -->
+
+    <link rel="stylesheet" href="/lib/spectre/spectre.min.css">
+
+
+<style>
+    body {
+        background-color: pink;
+    }
+
+    a, a:visited {
+        color: #0070ff;
+    }
+
+    a:active, a:focus, a:hover {
+        color: #0070ff;
+        opacity: .75;
+    }
+
+    #post-content a,
+    #post-content a:hover,
+    #post-content a:focus,
+    #post-content a:visited {
+        color: #005eb9;
+        opacity: 1;
+    }
+
+    .post-entry .card-body a {
+        color: #0070ff;
+    }
+
+    .avatar {
+        background: #444;
+    }
+
+    .navbar-link,
+    .navbar-link:visited,
+    .timeline .timeline-item .timeline-icon.icon-lg {
+        color: #0070ff;
+    }
+
+    .navbar-link:hover {
+        color: #0070ff;
+        opacity: .8;
+    }
+
+    #search-input .btn,
+    #disqus_click_btn,
+    #disqus-switch-to-direct,
+    #disqus-loadmore-button {
+        background: #727e96;
+        border-color: #727e96;
+        color: #fff;
+    }
+
+    #post-toc a.post-toc-link,
+    #post-toc a.post-toc-link:visited,
+    .share-menu.menu .menu-item>a {
+        color: #727e96;
+    }
+
+    .share-menu.menu .menu-item>a:hover,
+    .share-menu.menu .menu-item>a:focus,
+    .share-menu.menu .menu-item>a:visited {
+        color: #50596c;
+        background: pink;
+        opacity: .85;
+    }
+</style>
+
+<!-- style.css -->
+
+    <link rel="stylesheet" href="/css/style.min.css">
+
+
+
+
+
+
+
+
+
+    <!-- Prettify Theme -->
+    
+
+
+    
+
+    <!-- ### Site Verification ### -->
+    
+
+
+    <!-- ### RSS ### -->
+    
+
+    <!-- ### WebApp ### -->
+    <meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="风不觉">
+<meta name="msapplication-starturl" content="http://hxf9812.github.io">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="风不觉">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<!-- Manifest Import -->
+
+<!-- Open Search -->
+
+
+    <!-- ### The Open Graph & Twitter Card Protocol ### -->
+    <meta property="og:title" content="风不觉">
+<meta property="og:site_name" content="风不觉">
+
+<meta property="og:locale" content="en">
+
+<meta property="og:url" content="http://hxf9812.github.io/game/snake.html">
+<meta property="og:image" content="http://hxf9812.github.io/img/suka-favicon.ico">
+
+<meta property="og:description" content="
+
+	
+		
+		贪吃蛇游戏">
+
+<meta name="twitter:card" content="summary">
+
+
+    <meta property="og:type" content="blog">
+
+
+
+
+
+    <!-- ### Analytics ### -->
+    
+
+
+
+
+
+
+
+
+    <!-- ### Canonical link ### -->
+    <link rel="canonical" href="http://hxf9812.github.io/game/snake.html">
+
+    <!-- ### Structured Data ### -->
+    
+
+
+
+
+    <!-- ### Custom Head ### -->
+    
+
+
+</head>
+
+    <body>
+        
+
+            
+
+            <!-- ### Main content ### -->
+            <!-- ## Header ##-->
+<header>
+    <h1 class="header-title text-center"><a href="/">风不觉</a></h1>
+
+    <p class="text-center header-slogan">
+        
+            
+                憧憬光明，向死以生
+            
+        
+    </p>
+
+    <nav class="navbar-section text-center">
+    
+        <a href="/" class="navbar-link">Home</a>
+    
+    
+        <a href="/archives/" class="navbar-link">Archives</a>
+    
+    
+        <a href="/search" class="navbar-link">Search</a>
+    
+    
+    
+        <div class="dropdown dropdown-right">
+    <a class="navbar-link dropdown-toggle" tabindex="0">Share</a>
+    <ul class="menu share-menu">
+
+        <!-- Share Weibo -->
+        
+        <li class="menu-item">
+            <a href="http://service.weibo.com/share/share.php?appkey=&title=风不觉&url=http://hxf9812.github.io&pic=http://hxf9812.github.io/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+        </li>
+        
+
+        <!-- Share Twitter -->
+        
+        <li class="menu-item">
+            <a href="https://twitter.com/intent/tweet?text=风不觉&url=http://hxf9812.github.io&via=hxf9812" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+        </li>
+        
+
+        <!-- Share Facebook -->
+        
+        <li class="menu-item">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http://hxf9812.github.io" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+        </li>
+        
+
+        <!-- Share Google+ -->
+        
+        <li class="menu-item">
+            <a href="https://plus.google.com/share?url=http://hxf9812.github.io" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+        </li>
+        
+
+        <!-- Share LinkedIn -->
+        
+        <li class="menu-item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://hxf9812.github.io&title=" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+        </li>
+        
+
+        <!-- Share QQ -->
+        
+        <li class="menu-item">
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=风不觉&title=&summary=&pics=http://hxf9812.github.io/img/suka-favicon.ico&url=http://hxf9812.github.io" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+        </li>
+        
+
+        <!-- Share Telegram -->
+        
+        <li class="menu-item">
+            <a href="https://t.me/share/url?url=http://hxf9812.github.io&text=" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+        </li>
+        
+
+        <!-- QRCode -->
+        
+        <li class="menu-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAACECAAAAAB0L9x7AAABiUlEQVR42u3awa7CMAxE0f7/T7+3Roo94wa1E3S7AQUKZ2E5tpvrL+C6QIAAcQTiaq6PG4rPqvuc3wWRi1gGjbFevbfvBxGNWAVWt15BJveDOBex+oNVUFZrIH4P0eFW3wHxG4hqo6mSU1cAfX0XBfE4oitId16/Vm2DeBQhm1aziOmCcbsrB/EoogukKnFVzW/XQC8TGoh4hFPEToYkMrBBRCK6QtUtbu8mMBCZiGoAqgap04HbMkhBxCNUMaMSmhqeWYEJIgZRfdFJau7gzW6IQbyOUMMQp5jpBilVEgORiXATVheUVQDbGxiIWIRqcNXAVRXGo2obxGuIrsjtCl53yLL15AdEBEI1RWq45gxdQZyDUGtOEhpBQcQjpklIFT9qAAMiE+E+iOuapMlhUhD5iOlB4W7NORhkDc5AvI5wA1I2MwIqNzAQUQh1AHDSDG3voiDiEXeGrdZwHsSxiGqoNi5idpMViEcRzsNZ9d55qAviDIRzUNjdtG4PzkDEIN68QIAAEY34B047OQisASusAAAAAElFTkSuQmCC" alr="QRCode">
+        </li>
+        
+
+    </ul>
+</div>
+    
+    
+</nav>
+</header>
+
+            
+    <!-- ## Post ## -->
+    
+    
+
+
+<div class="post-container">
+    <div id="post-card" class="card">
+        
+        <div class="card-item-container">
+            <div class="card-inner-cell">
+                <!-- # Post Header Info # -->
+                <div class="card-header">
+                    
+
+
+
+<div class="post-header-info">
+    <p class="post-header-info-left text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="hxf9812's Avatar">
+        <span>2019-08-19</span>
+        
+        
+            <!-- Busuanzi Post Views -->
+<span id="busuanzi_container_page_pv" hidden>
+    <span class="suka-devide-dot"></span>
+    <span></span>
+    <span id="busuanzi_value_page_pv"></span>
+    <span>Views</span>
+</span>
+        
+        
+    </p>
+    <div class="post-header-info-right">
+        
+            <div class="dropdown dropdown-right">
+<a class="dropdown-toggle" tabindex="0">Share the post</a>
+<ul class="menu share-menu">
+    <!-- Share Weibo -->
+    
+    <li class="menu-item">
+        <a href="http://service.weibo.com/share/share.php?appkey=&title=&url=http://hxf9812.github.io/game/snake.html&pic=http://hxf9812.github.io/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+    </li>
+    
+
+    <!-- Share Twitter -->
+    
+    <li class="menu-item">
+        <a href="https://twitter.com/intent/tweet?text=&url=http://hxf9812.github.io/game/snake.html&via=hxf9812" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+    </li>
+    
+
+    <!-- Share Facebook -->
+    
+    <li class="menu-item">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://hxf9812.github.io/game/snake.html" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+    </li>
+    
+
+    <!-- Share Google+ -->
+    
+    <li class="menu-item">
+        <a href="https://plus.google.com/share?url=http://hxf9812.github.io/game/snake.html" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+    </li>
+    
+
+    <!-- Share LinkedIn -->
+    
+    <li class="menu-item">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://hxf9812.github.io/game/snake.html&title=风不觉" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+    </li>
+    
+
+    <!-- Share QQ -->
+    
+    <li class="menu-item">
+        <a href="http://connect.qq.com/widget/shareqq/index.html?site=风不觉&title=风不觉&summary=&pics=http://hxf9812.github.io/img/suka-favicon.ico&url=http://hxf9812.github.io/game/snake.html" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+    </li>
+    
+
+    <!-- Share Telegram -->
+    
+    <li class="menu-item">
+        <a href="https://t.me/share/url?url=http://hxf9812.github.io/game/snake.html&text=风不觉" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+    </li>
+    
+
+    <!-- QRCode -->
+    
+    <li class="menu-item">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAACECAAAAAB0L9x7AAABiUlEQVR42u3awa7CMAxE0f7/T7+3Roo94wa1E3S7AQUKZ2E5tpvrL+C6QIAAcQTiaq6PG4rPqvuc3wWRi1gGjbFevbfvBxGNWAVWt15BJveDOBex+oNVUFZrIH4P0eFW3wHxG4hqo6mSU1cAfX0XBfE4oitId16/Vm2DeBQhm1aziOmCcbsrB/EoogukKnFVzW/XQC8TGoh4hFPEToYkMrBBRCK6QtUtbu8mMBCZiGoAqgap04HbMkhBxCNUMaMSmhqeWYEJIgZRfdFJau7gzW6IQbyOUMMQp5jpBilVEgORiXATVheUVQDbGxiIWIRqcNXAVRXGo2obxGuIrsjtCl53yLL15AdEBEI1RWq45gxdQZyDUGtOEhpBQcQjpklIFT9qAAMiE+E+iOuapMlhUhD5iOlB4W7NORhkDc5AvI5wA1I2MwIqNzAQUQh1AHDSDG3voiDiEXeGrdZwHsSxiGqoNi5idpMViEcRzsNZ9d55qAviDIRzUNjdtG4PzkDEIN68QIAAEY34B047OQisASusAAAAAElFTkSuQmCC" alt="QRCode">
+    </li>
+    
+
+</ul>
+</div>
+        
+    </div>
+</div>
+                </div>
+                <div class="card-body">
+                    
+                        
+                    
+                    <article id="post-content">
+                        <!DOCTYPE html>
+<html>
+	<head><meta name="generator" content="Hexo 3.9.0">
+		<meta charset="UTF-8">
+		<title>贪吃蛇游戏</title>
+		<script src="js/vue.js"></script>
+		<style>
+			table{
+    				border-collapse:collapse;
+				}
+			table,td{
+    				border: 1px solid black;
+				}
+			td{
+				 height:20px;
+				 width: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<center>
+			<div id="tab">
+		<table>
+			<tr v-for="count in 30"><td v-for="count in 40"></td></tr>
+		</table>
+			</div>
+			<p> w a s d 操作 ，任意键暂停</p>
+		</center>
+		
+		
+		<script>
+			var vm=new Vue({
+				el : '#tab',
+			})
+			
+			var pos=document.getElementsByTagName("td");
+			//头坐标
+			var headx=7;
+			var heady=5;
+			//身体坐标数组
+			var body=[{x:4,y:5},{x:5,y:5},{x:6,y:5},{x:7,y:5}];
+			//身体初始化
+			for(var i=0;i<body.length;i++){
+				b(body[i].x,body[i].y)
+			}
+			var wall=[];
+			//初始化墙
+			for(var yi=1;yi<=30;yi++){
+				for(var xi=1;xi<=40;xi++){
+					if(yi==1||yi==30){var obj={x:xi,y:yi};wall.push(obj);p(xi,yi)}
+					else if(xi==1||xi==40){var obj={x:xi,y:yi};wall.push(obj);p(xi,yi);}
+				}
+			}
+			//定义食物
+			var foodx=Math.floor(Math.random()*37)+2;
+			var foody=Math.floor(Math.random()*27)+2;
+			//阻止蛇反向运动，flag代表上一个按键
+			var flag;
+			var thread;
+			var firstFood;
+			//键盘事件
+			function keyDown(e){
+				//产生第一个食物
+				if(firstFood==null){g(foodx,foody);firstFood=1;}
+				
+				if((flag==87&&e.which==83)||(flag==83&&e.which==87)||(flag==65&&e.which==68)||(flag==68&&e.which==65)){
+					return;
+				}
+								
+				if(flag==null){thread=setInterval(function (){run(e.which)},80)}
+				if(flag==e.which){return}
+				else{
+					clearInterval(thread);
+					thread=setInterval(function (){run(e.which)},80)
+				}
+			
+				flag=e.which;
+				}
+			document.onkeydown = keyDown;
+			
+			
+			function run(v){
+					//头坐标变换
+				switch(v){
+					case  87:heady--;break;  //w
+					case  65:headx--;break;  //a
+					case  83:heady++;break;  //s
+					case  68:headx++;break;  //d
+					default:return
+				}
+				//产生的新的头坐标
+				var obj={x:headx,y:heady}
+				//失败检测
+				for(var i=0;i<body.length;i++){
+					if(body[i].x==headx && body[i].y==heady){
+					alert(" 碰到自己啦！");
+					location.reload();
+					}
+				}
+				for(var i=0;i<wall.length;i++){
+					if(wall[i].x==headx && wall[i].y==heady){
+						alert("碰到墙啦！")
+						location.reload()
+					}
+				}
+				
+				//将新产生的头坐标变为黑色，并加入列表
+				b(headx,heady);
+				body.push(obj);
+				if(headx==foodx&&heady==foody){
+					foodx=Math.floor(Math.random()*37)+2;
+					foody=Math.floor(Math.random()*27)+2;
+					g(foodx,foody);
+					return
+				}
+				//把列表第一个元素变为白色，并删除
+				w(body[0].x,body[0].y);
+				body.shift();
+			}
+			//将相应坐标变为黑色
+			function b(x,y){
+				pos[(y-1)*40+x-1].style.backgroundColor='black';
+			}
+			//将响应坐标变为白色
+			function w(x,y){
+				pos[(y-1)*40+x-1].style.backgroundColor='white';
+			}
+			function p(x,y){
+				pos[(y-1)*40+x-1].style.backgroundColor='pink';
+			}
+			function g(x,y){
+				pos[(y-1)*40+x-1].style.backgroundColor='green';
+			}
+		</script>
+	</body>
+</html>
+
+                    </article>
+                    
+
+
+    <blockquote id="date-expire-notification" class="post-expired-notify">This article was last updated on <span id="date-expire-num"></span> days ago, and the information described in the article may have changed.</blockquote>
+    <script>
+        var dateUpdate = Date.parse("2019-08-19");
+        var nowDate = new Date();
+        var a = nowDate.getTime();
+        var b = a - dateUpdate;
+        var daysUpdateExpire = Math.floor(b/(24*3600*1000));
+        if (daysUpdateExpire >= 120) {
+            document.getElementById('date-expire-num').innerHTML = daysUpdateExpire;
+        } else {
+            document.getElementById('date-expire-notification').style.display = 'none';
+        }
+    </script>
+
+
+<p class="post-footer-info mb-0 pt-0">Published at&nbsp;<time datetime="2019-08-19T04:23:57.953Z" itemprop="datePublished">2019-08-19</time>
+
+</p>
+<p class="post-footer-info mb-0 pt-2">
+
+
+
+
+</p>
+
+                </div>
+                
+<div class="post-nav px-2 bg-gray">
+<ul class="pagination">
+    <!-- Prev Nav -->
+    
+
+    <!-- Next Nav -->
+    
+</ul>
+</div>
+
+                
+                    <!-- # Comment # -->
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+            <!-- ### Footer ### -->
+            <footer class="text-center">
+    <!-- footer copyright -->
+    <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span data-year></span>
+        <a class="footer-copyright-a" href="http://hxf9812.github.io">风不觉</a>
+    </p>
+    <!-- footer custom text -->
+    <p class="footer-text mb-0">
+    
+    </p>
+    <!-- footer develop info -->
+    <p class="footer-develop mb-0">
+        
+            
+    <!-- Busuanzi User Views -->
+    <span id="busuanzi_container_site_uv" hidden>
+        <span></span>
+        <span id="busuanzi_value_site_uv"></span>
+        <span>Viewers</span>
+        
+            <span>|</span>
+        
+    </span>
+
+
+
+        
+        
+        Powered by&nbsp;<!--
+         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="external nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
+         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="external noopener">Suka</a>
+    </p>
+</footer>
+
+        
+
+        <!-- ### Import File ### -->
+        <!-- ### Footer JS Import ### -->
+
+<script>
+window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 50
+};
+
+
+
+    /* Copyright */
+    var copyrightNow = new Date().getFullYear();
+    var copyrightContent = document.querySelector('span[data-year]')
+    
+        copyrightContent.textContent = copyrightNow
+    
+
+
+
+/* Cnosole Log */
+console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
+</script>
+
+<!-- vanilla-lazyload -->
+
+    <script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+
+
+
+    <!-- Busuanzi -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
+
+
+<!-- Offset -->
+
+
+
+
+
+
+
+<!-- gallery.js -->
+
+
+<!-- Comment -->
+
+
+<!-- ### Custom Footer ### -->
+
+
+    </body>
+
+</html>
