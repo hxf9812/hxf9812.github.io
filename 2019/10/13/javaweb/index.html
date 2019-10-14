@@ -82,7 +82,9 @@ window.oldVersion = [
 <meta name="format-detection" content="telephone=no">
 
 <!-- Description -->
-<meta name="description" content>
+<meta name="description" content="Javaweb很多基础知识，很重要但是我一直没有完全搞清楚，一直模模糊糊的也不太好，个人还是希望能把事情弄的明明白白的
+
+">
 
 <!-- Keywords -->
 <meta name="keywords" content>
@@ -215,7 +217,9 @@ window.oldVersion = [
 <meta property="og:url" content="http://hxf9812.github.io/2019/10/13/javaweb/">
 <meta property="og:image" content="http://hxf9812.github.io/img/suka-favicon.ico">
 
-<meta property="og:description" content>
+<meta property="og:description" content="Javaweb很多基础知识，很重要但是我一直没有完全搞清楚，一直模模糊糊的也不太好，个人还是希望能把事情弄的明明白白的
+
+">
 
 <meta name="twitter:card" content="summary">
 
@@ -266,7 +270,7 @@ window.oldVersion = [
     },
     
     "datePublished": "2019-10-13T03:49:41.000Z",
-    "dateModified": "2019-10-13T04:21:40.056Z",
+    "dateModified": "2019-10-14T03:15:08.543Z",
     "author": {
         "@type": "Person",
         "name": "hxf9812",
@@ -292,7 +296,9 @@ window.oldVersion = [
     },
     
     "keywords": "",
-    "description": ""
+    "description": "Javaweb很多基础知识，很重要但是我一直没有完全搞清楚，一直模模糊糊的也不太好，个人还是希望能把事情弄的明明白白的
+
+"
 }
 </script>
 
@@ -507,20 +513,37 @@ window.oldVersion = [
                     
                         
                             <div id="post-toc">
-                                <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Javaweb很多基础知识，很重要但是我一直没有完全搞清楚，一直模模糊糊的也不太好，个人还是希望能把事情弄的明明白白的"><span class="post-toc-number">1.</span> <span class="post-toc-text">Javaweb很多基础知识，很重要但是我一直没有完全搞清楚，一直模模糊糊的也不太好，个人还是希望能把事情弄的明明白白的</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#1-关于javaweb中url路径加斜杠-“-“-和不加的区别"><span class="post-toc-number">1.0.1.</span> <span class="post-toc-text">1. 关于javaweb中url路径加斜杠(“/“)和不加的区别</span></a></li></ol></li></ol></li></ol>
+                                <ol class="post-toc"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#url路径"><span class="post-toc-number">1.</span> <span class="post-toc-text">url路径</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#web中的三大组件"><span class="post-toc-number">2.</span> <span class="post-toc-text">web中的三大组件</span></a></li></ol>
                             </div>
                         
                     
                     <article id="post-content">
-                        <h3 id="Javaweb很多基础知识，很重要但是我一直没有完全搞清楚，一直模模糊糊的也不太好，个人还是希望能把事情弄的明明白白的"><a href="#Javaweb很多基础知识，很重要但是我一直没有完全搞清楚，一直模模糊糊的也不太好，个人还是希望能把事情弄的明明白白的" class="headerlink" title="Javaweb很多基础知识，很重要但是我一直没有完全搞清楚，一直模模糊糊的也不太好，个人还是希望能把事情弄的明明白白的"></a>Javaweb很多基础知识，很重要但是我一直没有完全搞清楚，一直模模糊糊的也不太好，个人还是希望能把事情弄的明明白白的</h3><hr>
-<h5 id="1-关于javaweb中url路径加斜杠-“-“-和不加的区别"><a href="#1-关于javaweb中url路径加斜杠-“-“-和不加的区别" class="headerlink" title="1. 关于javaweb中url路径加斜杠(“/“)和不加的区别"></a>1. 关于javaweb中url路径加斜杠(“/“)和不加的区别</h5><p>这个可以说是困惑我很久，而且我自己也一直没去整理总结，总之经常碰到相关问题就是了</p>
+                        <p>Javaweb很多基础知识，很重要但是我一直没有完全搞清楚，一直模模糊糊的也不太好，个人还是希望能把事情弄的明明白白的</p>
+<hr>
+<h5 id="url路径"><a href="#url路径" class="headerlink" title="url路径"></a>url路径</h5><p>关于javaweb中url路径加斜杠(“/“)和不加的区别<br>这个可以说是困惑我很久，而且我自己也一直没去整理总结，总之经常碰到相关问题就是了</p>
 <ol>
 <li>没有开头表示 当前目录</li>
 <li>(“/“)表示 根目录 </li>
 <li>(“./“)表示 当前目录</li>
-<li>(“../“)表示 当前目录的父目录</li>
+<li>(“../“)表示 当前目录的父目录<br>对于根目录分为以下几种情况：<br>. 在html页面中，根目录是盘符<br>. 在tomcat中，根目录是站点<br>. 在请求转发中调用的getRequestDispatcher()方法中，根目录是项目根目录</li>
 </ol>
-<p>对于根目录分为以下几种情况：<br>. 在html页面中，根目录是盘符<br>. 在tomcat中，根目录是站点<br>. 在请求转发中调用的getRequestDispatcher()方法中，根目录是项目根目录</p>
+<hr>
+<p>另外关于ajax中url的写法又有些不同，没有开头表示项目根目录，加斜杠表示服务器的根目录</p>
+<hr>
+<h5 id="web中的三大组件"><a href="#web中的三大组件" class="headerlink" title="web中的三大组件"></a>web中的三大组件</h5><ol>
+<li><p>servlet主要负责处理请求<br>Servlet的生命周期方法：</p>
+<blockquote>
+<p>void init(ServletConfig)<br>servlet的初始化方法，只在创建servlet实例时候调用一次，Servlet是单例的，整个服务器就只创建一个同类型Servlet<br>void service(ServletRequest,ServletResponse)<br>servlet的处理请求方法，在servle被请求时，会被马上调用，每处理一次请求，就会被调用一次。ServletRequest类为请求类，ServletResponse类为响应类<br>void destory()<br>servlet销毁之前执行的方法，只执行一次，用于释放servlet占有的资源，通常Servlet是没什么可要释放的，所以该方法一般都是空的</p>
+</blockquote>
+</li>
+<li><p>filter主要负责拦截请求，和放行<br>filter和servlet一样都有三个生命周期方法，但是filter作用是在servlet之前进行验证<br>filter四种拦截方式</p>
+</li>
+</ol>
+<p>. REQUEST：直接访问目标资源时执行过滤器。包括：在地址栏中直接访问、表单提交、超链接、重定向，只要在地址栏中可以看到目标资源的路径，就是REQUEST；<br>. FORWARD：转发访问执行过滤器。包括RequestDispatcher#forward()方法、&lt; jsp:forward&gt;标签都是转发访问；<br>. INCLUDE：包含访问执行过滤器。包括RequestDispatcher#include()方法、&lt; jsp:include&gt;标签都是包含访问；<br>. ERROR：当目标资源在web.xml中配置为&lt; error-page&gt;中时，并且真的出现了异常，转发到目标资源时，会执行过滤器。<br>匹配规则有三种：</p>
+<p>. 精确匹配 —— 如/foo.htm，只会匹配foo.htm这个URL<br>. 路径匹配 —— 如/foo/<em>，会匹配以foo为前缀的URL<br>. 后缀匹配 —— 如</em>.htm，会匹配所有以.htm为后缀的URL<br>&lt; url-pattern&gt;的其他写法，如/foo/ ，/.htm ，/foo 都是不对的。</p>
+<ol start="3">
+<li>listener是监听器,监听Application、Session、Request对象<br>和按钮一样，当这些对象发生变化就会调用对应的监听方法，主要的五个方法，出生时 死亡时 添加属性时 更改属性时 删除属性时</li>
+</ol>
 
                     </article>
                     
@@ -528,7 +551,7 @@ window.oldVersion = [
 
     <blockquote id="date-expire-notification" class="post-expired-notify">This article was last updated on <span id="date-expire-num"></span> days ago, and the information described in the article may have changed.</blockquote>
     <script>
-        var dateUpdate = Date.parse("2019-10-13");
+        var dateUpdate = Date.parse("2019-10-14");
         var nowDate = new Date();
         var a = nowDate.getTime();
         var b = a - dateUpdate;
@@ -542,6 +565,8 @@ window.oldVersion = [
 
 
 <p class="post-footer-info mb-0 pt-0">Published at&nbsp;<time datetime="2019-10-13T03:49:41.000Z" itemprop="datePublished">2019-10-13</time>
+
+    , Updated at&nbsp;<time datetime="2019-10-14T03:15:08.543Z" itemprop="dateModified">2019-10-14</time>
 
 </p>
 <p class="post-footer-info mb-0 pt-2">
